@@ -1,0 +1,2 @@
+1. print the unsigned 32 bit number in the binary form.
+2. 

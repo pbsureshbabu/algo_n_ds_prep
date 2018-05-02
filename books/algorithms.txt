@@ -1,0 +1,5 @@
+1. Introduction to Algorithms - Thomas Cormen
+2. Algorithms Unlocked - Thomas Cormen
+3. The Algorithm design manual
+4. Algorithm Design
+5. 

@@ -1,0 +1,8 @@
+// #41: First missing positive integer
+// 1. use the header climits for INT_MAX and INT_MIN
+// 2. check the input parameters and validity
+// 3. also check the values in the intermediate code where you will 
+//    think that the code before has changed from the initial value.
+// 4. vector stl
+// 5. while updating the lookup table, use the arr value instead of indexes
+//    as it was intended to be.

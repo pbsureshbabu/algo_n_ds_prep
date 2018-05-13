@@ -6,3 +6,10 @@
 // 4. vector stl
 // 5. while updating the lookup table, use the arr value instead of indexes
 //    as it was intended to be.
+
+
+// #42: Trapping rain water
+// 1. review the vector/array boundaries, whether anyelement outside is being accessed.
+// 2. think about which one to have, whether max or -2 or 0 or min of -2 or 0.
+// 3. go through some test cases.
+

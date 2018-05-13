@@ -1,7 +1,9 @@
 // lessons learned
 // 1. be careful w/ stl .size(). Have the parenthesis.
 // 2. also be careful w/ converting character into a lut
-// 3. characters can be added to the string container by + operator.
+// 3. characters can be added to the string container by + operator like 
+//    string s1;
+//    s1+='c'; 
 
 #include <iostream>
 #include <string>

@@ -1,71 +1,75 @@
-// 46. permute
-// -given a collection of distinct integers, return all possible integers
+// 46. permute a collection of distinct integers, return all possible integers
 
 // lessons learned
 // 1. understand what is the output
 // 2. don't jump into printing or something
+// 3. vector of vectors and how they are initialized; revisit it
+// 4. changing the class little bit by introducing the helper function and data members
+
 
 
 #include <iostream>
 #include <vector>
 using namespace std;
 
-void permute( vector<int> &arr, vector<int> &cnt, vector<int> &res, int lvl)
+class solution
 {
-	// base case
-	if( lvl==arr.size() )
+public:
+	vector<vector<int> > res;
+	vector<vector<int> > permute( vector<int> &nums )
 	{
-		static int first_time=1;
-		if( first_time )
-		{
-			cout << endl << "  [";
-			first_time=0;
-		}
-		else
-			cout << "," << endl << "  [";
-		for(int i=0; i<res.size(); i++)
-		{
-			if(i!=res.size()-1)
-				cout << res[i] << ",";
-			else
-				cout << res[i];
-		}
-		cout << "]";
-	}
-
-	// recursive case
-	for(int i=0; i<arr.size(); i++)
-	{
-		if(cnt[i]!=0)
-		{
-			res[lvl]=arr[i];
-			cnt[i]=0;
-			permute( arr, cnt, res, lvl+1 );
+		vector<int> cnt(nums.size());
+		for(int i=0; i<cnt.size(); i++)
 			cnt[i]=1;
+		vector<int> res1(nums.size());
+
+		permute_helper(nums, cnt, this->res, res1, 0);
+		return res;
+	}
+private:
+	void permute_helper( vector<int> &arr, vector<int> &cnt, 
+						 vector<vector<int> > &res, vector<int> res1, int lvl)
+	{
+		// base case
+		if( lvl==arr.size() )
+		{
+			res.resize(res.size()+1, vector<int>(cnt.size()));
+			for(int i=0; i<res1.size(); i++)
+				res[res.size()-1][i]=res1[i];
+			return;
+		}
+	
+		// recursive case
+		for(int i=0; i<arr.size(); i++)
+		{
+			if(cnt[i]!=0)
+			{
+				res1[lvl]=arr[i];
+				cnt[i]=0;
+				permute_helper( arr, cnt, res, res1, lvl+1 );
+				cnt[i]=1;
+			}
 		}
 	}
-}
+};
 
-void permute_wrapper( vector<int> &arr )
-{
-	vector<int> cnt(arr.size());
-	vector<int> res(arr.size());
-	for(int i=0; i<arr.size(); i++)
-		cnt[i]=1;
-	cout << "[";
-	permute( arr, cnt, res, 0);
-	cout << endl << "]" << endl;
-}
 
 int main()
 {
+	class solution sol;
 	vector<int> nums;
-	
 	nums.push_back(1);
 	nums.push_back(2);
 	nums.push_back(3);
+	vector<vector<int> > res;
 
-	permute_wrapper( nums );
+	res = sol.permute( nums );
+	for(int i=0; i<res.size(); i++)
+	{
+		for(int j=0; j<res[0].size(); j++)
+			cout << res[i][j] << " ";
+		cout << endl;
+	}
 
 	return 0;
 }

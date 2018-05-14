@@ -20,3 +20,11 @@
 // 3. characters can be added to the string container by + operator like 
 //    string s1;
 //    s1+='c'; 
+
+// 46. permute a collection of distinct integers, return all possible integers
+// 1. understand what is the output
+// 2. don't jump into printing or something
+// 3. vector of vectors and how they are initialized; revisit it
+// 4. changing the class little bit by introducing the helper function and data members
+
+

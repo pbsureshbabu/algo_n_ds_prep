@@ -21,10 +21,16 @@
 //    string s1;
 //    s1+='c'; 
 
+
 // 46. permute a collection of distinct integers, return all possible integers
 // 1. understand what is the output
 // 2. don't jump into printing or something
 // 3. vector of vectors and how they are initialized; revisit it
 // 4. changing the class little bit by introducing the helper function and data members
 
+
+// 49. group anagrams 
+// 1. take care of the indexes of the strings
+// 2. go through all the cases 
+// 3. problem looks simple, but implementing it seems to be giving lots of bugs
 

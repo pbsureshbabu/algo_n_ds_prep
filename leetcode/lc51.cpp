@@ -1,16 +1,29 @@
+// #51 - N queens problem
+//
+// lessons learned
+
 #include <iostream>
 #include <vector>
 #include <cmath>
 using namespace std;
 
-class convert
+class Solution
 {
 private:
 	vector<vector<string> > res;
+    vector<vector<int> > qsol;
 public:
 	bool queenhelper( vector<int> &rcinfo, int r )
 	{
-		if(r==rcinfo.size()) return true;
+		if(r==rcinfo.size()) 
+		{
+			qsol.resize(qsol.size()+1, vector<int>(rcinfo.size()));
+			for(int r=0; r<rcinfo.size(); r++)
+			{
+				qsol[qsol.size()-1][r]=rcinfo[r];
+			}
+			return true;
+		}
 
 		for(int c=0; c<rcinfo.size(); c++)
 		{
@@ -23,38 +36,23 @@ public:
 			if(!ua)
 			{
 				rcinfo[r]=c;
-				bool val;
-				val=queenhelper( rcinfo, r+1 );
-				if(val==true) return true;
-				else rcinfo[r]=-1;
+				queenhelper( rcinfo, r+1 );
 			}
+			rcinfo[r]=-1;
 		}
 		return false;
 	}
-	vector<vector<string> > solveQueen(int n)
+	vector<vector<string> > solveNQueens(int n)
 	{
-		vector<vector<int> > qsol;
 		vector<int> rcinfo(n);
 		for(int r=0; r<n; r++)
 			rcinfo[r]=-1;
 
 		for(int c=0; c<n; c++)
 		{
-			bool retval;
 			rcinfo[0]=c;
-			retval = queenhelper( rcinfo, 1 ); // always start from row 0
-			if(retval==true)
-			{
-				// handle the solution
-				qsol.resize(qsol.size()+1, vector<int>(n));
-				for(int r=0; r<n; r++)
-				{
-					qsol[qsol.size()-1][r]=rcinfo[r];
-					rcinfo[r]=-1;
-				}
-			}
-			else
-				rcinfo[0]=-1;
+			queenhelper( rcinfo, 1 );
+			rcinfo[0]=-1;
 		}
 		convertrc(qsol);
 		return res;
@@ -81,17 +79,19 @@ public:
 int main()
 {
 	int n=5;
-	convert con;
+	Solution sol;
 	vector<vector<string> > res;
 
-	res = con.solveQueen( n );
+	res = sol.solveNQueens( n );
 
-	for(int sol=0; sol<res.size(); sol++ )
+	for(int so=0; so<res.size(); so++ )
 	{
-		for(int r=0; r<res[sol].size(); r++)
-			cout << res[sol][r] << endl;
+		for(int r=0; r<res[so].size(); r++)
+			cout << res[so][r] << endl;
 		cout << endl;
 	}
 	
 	return 0;
 }
+
+

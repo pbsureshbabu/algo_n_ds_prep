@@ -1,97 +1,90 @@
 #include <iostream>
-#include <vector>
-#include <cmath>
+#include <cstdlib>
 using namespace std;
 
-class convert
+#define MAXV    (50)
+
+typedef struct enode_
 {
-private:
-	vector<vector<string> > res;
-public:
-	bool queenhelper( vector<int> &rcinfo, int r )
-	{
-		if(r==rcinfo.size()) return true;
+	int y;
+	int w;
+	struct enode_ *n;
+} enode_t;
 
-		for(int c=0; c<rcinfo.size(); c++)
-		{
-			bool ua=false;
-			for(int i=0; i<r; i++)
-			{
-				if(c==rcinfo[i]) ua=true;
-				if(abs(i-r)==abs(c-rcinfo[i])) ua=true;
-			}
-			if(!ua)
-			{
-				rcinfo[r]=c;
-				bool val;
-				val=queenhelper( rcinfo, r+1 );
-				if(val==true) return true;
-				else rcinfo[r]=-1;
-			}
-		}
-		return false;
-	}
-	vector<vector<string> > solveQueen(int n)
-	{
-		vector<vector<int> > qsol;
-		vector<int> rcinfo(n);
-		for(int r=0; r<n; r++)
-			rcinfo[r]=-1;
+typedef struct graph_
+{
+	int nv;
+	int ne;
+	bool is_directed;
+	int outdeg[MAXV];
+	enode_t *enodes[MAXV];
+} graph_t;
 
-		for(int c=0; c<n; c++)
-		{
-			bool retval;
-			rcinfo[0]=c;
-			retval = queenhelper( rcinfo, 1 ); // always start from row 0
-			if(retval==true)
-			{
-				// handle the solution
-				qsol.resize(qsol.size()+1, vector<int>(n));
-				for(int r=0; r<n; r++)
-				{
-					qsol[qsol.size()-1][r]=rcinfo[r];
-					rcinfo[r]=-1;
-				}
-			}
-			else
-				rcinfo[0]=-1;
-		}
-		convertrc(qsol);
-		return res;
-		
-	}
-	vector<vector<string> > convertrc( vector<vector<int> > &rcinfo )
+void add_edge( graph_t *g, int src, int dst, int wt )
+{
+	if(src>=g->nv || dst>=g->nv)
 	{
-		if( rcinfo.size()==0 ) return res;
-		else { res.resize(rcinfo.size(), vector<string>(rcinfo[0].size())); }
-
-		for(int sol=0; sol<rcinfo.size(); sol++)
-		{
-			for(int r=0; r<rcinfo[sol].size(); r++)
-			{
-				for(int c=0; c<rcinfo[sol].size(); c++)
-					if(rcinfo[sol][r]==c) res[sol][r]=res[sol][r]+'Q';
-					else res[sol][r]=res[sol][r]+'.';
-			}
-		}
-		return res;
+		cout << "invalid edge" << endl;
+		return;
 	}
-};
+	enode_t *tenode = (enode_t *)malloc(sizeof(enode_t));
+	tenode->y=dst;
+	tenode->w=wt;
+	tenode->n=g->enodes[src];
+	g->enodes[src]=tenode;
+	g->outdeg[src]++;
+	g->ne++;
+}
+
+void add_vertex( graph_t *g )
+{
+	if(g->nv+1<MAXV)
+		g->nv++;
+}
+
+void init_graph( graph_t *g, bool is_directed )
+{
+	g->nv=0;
+	g->ne=0;
+	g->is_directed = is_directed;
+	for(int i=0; i<MAXV; i++)
+	{
+		g->outdeg[i]=0;
+		g->enodes[i]=NULL;
+	}
+}
+
+void print_graph( graph_t *g )
+{
+	cout << "no of vertices = " << g->nv << endl;
+	cout << "no of edges = " << g->ne << endl;
+	cout << "is directed = " << g->is_directed << endl;
+	for(int i=0; i<g->nv; i++)
+	{
+		cout << "info for vertex " << i << " : " << endl;
+		cout << "outdeg = " << g->outdeg[i] << endl;
+		enode_t *t = g->enodes[i];
+		while(t) { cout << t->y;t=t->n;}
+		cout << endl;
+	}
+}
 
 int main()
 {
-	int n=5;
-	convert con;
-	vector<vector<string> > res;
+	graph_t g;
 
-	res = con.solveQueen( n );
-
-	for(int sol=0; sol<res.size(); sol++ )
-	{
-		for(int r=0; r<res[sol].size(); r++)
-			cout << res[sol][r] << endl;
-		cout << endl;
-	}
+	init_graph( &g, true );
+	add_vertex( &g );
+	add_vertex( &g );
+	add_vertex( &g );
+	add_vertex( &g );
+	add_vertex( &g );
+	add_edge( &g, 0, 1, 1);
+	
+	
+	print_graph( &g );
 	
 	return 0;
 }
+
+

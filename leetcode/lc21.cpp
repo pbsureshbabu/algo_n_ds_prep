@@ -1,3 +1,10 @@
+// Leetcode prob #21 - Merge two sorted lists
+
+// lessons learned
+// 1. be careful w/ the pointers
+// 2. it is better to put some diagram of the data structure instead of keeping in memory
+// 3. it is called cognitive outsourcing.
+
 #include <iostream>
 using namespace std;
 

@@ -1,0 +1,35 @@
+(1 done)Terminology and Representations of Graphs
+(2) Graph Implementation using STL
+(3) Graph Implementation in C++ without using STL
+(4) Implement Graph Data Structure in C
+(5) Graph Implementation in Java using Collections
+(6) Breadth First Search (BFS) | Iterative & Recursive Implementation
+(7) Depth First Search (DFS) | Iterative & Recursive Implementation
+(8) Arrival and Departure Time of Vertices in DFS
+(9) Types of edges involved in DFS and relation between them
+(10) Determine if a given graph is Bipartite Graph or not
+(11) Determine if a given graph is Bipartite Graph using DFS
+(12) Minimum number of throws required to win Snake and Ladder game
+(13) Topological Sorting in a DAG
+(14) Kahn's Topological Sort Algorithm
+(15) Transitive Closure of a Graph
+(16) Check if an undirected graph contains cycle or not
+(17) Total number of paths in given digraph from given source to destination having exactly m edges
+(18) Determine if an undirected graph is a Tree (Acyclic Connected Graph)
+(19) 2-Edge Connectivity in the graph
+(20) 2-Vertex Connectivity in the graph
+(21) Check if given digraph is a DAG (Directed Acyclic Graph) or not
+(22) Disjoint-Set Data Structure (Union-Find Algorithm)
+(23) Chess Knight Problem – Find Shortest path from source to destination
+(24) Check if given Graph is Strongly Connected or not
+(25) Check if given Graph is Strongly Connected or not using one DFS Traversal
+(26) Union-Find Algorithm for Cycle Detection in undirected graph
+(27) Kruskal’s Algorithm for finding Minimum Spanning Tree
+(28) Single-Source Shortest Paths – Dijkstra’s Algorithm
+(29) Single-Source Shortest Paths – Bellman Ford Algorithm
+(30) All-Pairs Shortest Paths – Floyd Warshall Algorithm
+(31) Find Cost of Shortest Path in DAG using one pass of Bellman-Ford
+(32) Least Cost Path in Weighted Digraph using BFS
+(33) Print all k-colorable configurations of the graph (Vertex coloring of graph)
+(34) Print All Hamiltonian Path present in a graph
+(35) Greedy coloring of graph

@@ -1,0 +1,56 @@
+(1) Introduction to Dynamic Programming
+(2) Longest Common Subsequence | Introduction & LCS Length
+(3) Longest Common Subsequence | Space optimized version
+(4) Longest Common Subsequence | Finding all LCS
+(5) Longest Common Subsequence of K-sequences
+(6) Longest Common Substring problem
+(7) Longest Palindromic Subsequence using Dynamic Programming
+(8) Longest Repeated Subsequence problem
+(9) Implement Diff Utility
+(10) Shortest Common Supersequence | Introduction & SCS Length
+(11) Shortest Common Supersequence | Finding all SCS
+(12) Shortest Common Supersequence | Using LCS
+(13) Longest Increasing Subsequence using Dynamic Programming
+(14) Longest Bitonic Subsequence
+(15) Increasing Subsequence with Maximum Sum
+(16) Longest Decreasing Subsequence Problem
+(17) The Levenshtein distance (Edit distance) problem
+(18) Word Break Problem
+(19) Word Break Problem | Using Trie Data Structure
+(20) Wildcard Pattern Matching
+(21) Find size of largest square sub-matrix of 1’s present in given binary matrix
+(22) Matrix Chain Multiplication
+(23) Find the minimum cost to reach last cell of the matrix from its first cell
+(24) Find longest sequence formed by adjacent numbers in the matrix
+(25) Count number of paths in a matrix with given cost to reach destination cell
+(26) 0-1 Knapsack problem
+(27) Maximize value of the expression
+(28) Partition problem
+(29) Subset sum problem
+(30) Minimum Sum Partition problem
+(31) Find all N-digit binary strings without any consecutive 1’s
+(32) Rod Cutting
+(33) Maximum Product Rod Cutting
+(34) Coin change-making problem (unlimited supply of coins)
+(35) Coin Change Problem – Find total number of ways to get the denomination of coins
+(36) Total possible solutions to linear equation of k variables
+(37) Longest alternating subsequence
+(38) Count number of times a pattern appears in given string as a subsequence
+(39) Collect maximum points in a matrix by satisfying given constraints
+(40) Count total possible combinations of N-digit numbers in a mobile keypad
+(41) Find optimal cost to construct binary search tree
+(42) Pots of Gold Game using Dynamic Programming
+(43) Find minimum cuts needed for palindromic partition of a string
+(44) Maximum Length Snake Sequence
+(45) 3 Partition Problem
+(46) Calculate size of the largest plus of 1's in binary matrix
+(47) Check if given string is interleaving of two other given strings
+(48) Longest Increasing Subsequence using LCS
+(49) Find probability that a person is alive after taking N steps on the island
+(50) Calculate sum of all elements in a sub-matrix in constant time
+(51) Find maximum sum K x K sub-matrix in a given M x N matrix
+(52) Find maximum sum submatrix present in a given matrix
+(53) Find maximum sum of subsequence with no adjacent elements
+(54) Maximum subarray problem (Kadane’s algorithm)
+(55) Single-Source Shortest Paths – Bellman Ford Algorithm
+(56) All-Pairs Shortest Paths – Floyd Warshall Algorithm

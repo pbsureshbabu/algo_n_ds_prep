@@ -1,5 +1,11 @@
-1. Introduction to Algorithms - Thomas Cormen
-2. Algorithms Unlocked - Thomas Cormen
-3. The Algorithm design manual
-4. Algorithm Design
-5. 
+1. The algorithm design manual - Skienna
+2. Algorithm design - Klenberg and Tardos
+3. Cracking the coding interview - Gayle Laakman Mcdowell
+4. Elements of programming interviews - Adnan Aziz, Tsung Hsien, Amit Prakash
+5. Algorithms - Robert Sedgewick, Kevin Wayne
+6. Concrete Mathematics - Graham, Knuth, Patashnik
+7. Dynamic Programming - Richard Bellman
+8. Grokking Algorithms - Aditya Y Bhargava
+9. Introduction to Algorithms - Cormen, Leiserson, Rivest, Stein
+10. Programming Challenges - skiena, Revilla
+11. Algorithms - Dasgupta, Papdimitriou, Vazirani

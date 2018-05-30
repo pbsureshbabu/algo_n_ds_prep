@@ -9,3 +9,5 @@
 9. Introduction to Algorithms - Cormen, Leiserson, Rivest, Stein
 10. Programming Challenges - skiena, Revilla
 11. Algorithms - Dasgupta, Papdimitriou, Vazirani
+12. Computer science distilled - Wladston, ferreira, filho
+13. Once upon an algorithm - Martin Erwig

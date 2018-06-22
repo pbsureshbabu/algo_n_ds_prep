@@ -1,13 +1,15 @@
-1. The algorithm design manual - Skienna
-2. Algorithm design - Klenberg and Tardos
-3. Cracking the coding interview - Gayle Laakman Mcdowell
-4. Elements of programming interviews - Adnan Aziz, Tsung Hsien, Amit Prakash
-5. Algorithms - Robert Sedgewick, Kevin Wayne
-6. Concrete Mathematics - Graham, Knuth, Patashnik
-7. Dynamic Programming - Richard Bellman
-8. Grokking Algorithms - Aditya Y Bhargava
-9. Introduction to Algorithms - Cormen, Leiserson, Rivest, Stein
-10. Programming Challenges - skiena, Revilla
-11. Algorithms - Dasgupta, Papdimitriou, Vazirani
-12. Computer science distilled - Wladston, ferreira, filho
-13. Once upon an algorithm - Martin Erwig
+1. Algo: The algorithm design manual - Skienna
+2. Algo: Algorithm design - Klenberg and Tardos
+3. Interview Prep: Cracking the coding interview - Gayle Laakman Mcdowell
+4. Interview Prep: Elements of programming interviews - Adnan Aziz, Tsung Hsien, Amit Prakash
+5. Algo: Algorithms - Robert Sedgewick, Kevin Wayne
+6. Math: Concrete Mathematics - Graham, Knuth, Patashnik
+7. DP: Dynamic Programming - Richard Bellman
+8. Algo: Grokking Algorithms - Aditya Y Bhargava
+9. Algo: Introduction to Algorithms - Cormen, Leiserson, Rivest, Stein
+10. Interview Prep: Programming Challenges - skiena, Revilla
+11. Algo: Algorithms - Dasgupta, Papdimitriou, Vazirani
+12. Algo: Computer science distilled - Wladston, ferreira, filho
+13. Algo: Once upon an algorithm - Martin Erwig
+14. DP: Dynamic programming for coding interviews - Meenakshi
+15. Algo: Programming for the puzzled - Srini Devadas

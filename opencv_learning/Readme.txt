@@ -22,3 +22,7 @@ Created and ran a first test application.
 // 3_sample_program.cpp
 1. Using Mat data structure, but creating array of Mats for storing multiple images
 2. namedWindow(), imread(), imshow and destroyWindow() are all used again but many times to each of the frames.
+
+// 4_sample_program.cpp
+1. storing the image and for this imwrite() is used.
+2. it takes, the file that needs to be created, filled and stored and the image itself as a matrix

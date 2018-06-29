@@ -1,0 +1,4 @@
+1. Open Source Computer Vision for Beginners : Learn OpenCV using C++ in 
+fastest possible way (2nd Edition)
+-Nuruzzaman Faruqui
+

@@ -26,3 +26,7 @@ Created and ran a first test application.
 // 4_sample_program.cpp
 1. storing the image and for this imwrite() is used.
 2. it takes, the file that needs to be created, filled and stored and the image itself as a matrix
+
+// 5_sample_program.cpp
+1. loading the image only w/ the independent gray scale (only one channel)
+

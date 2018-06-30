@@ -30,3 +30,9 @@ Created and ran a first test application.
 // 5_sample_program.cpp
 1. loading the image only w/ the independent gray scale (only one channel)
 
+// 6_sample_program.cpp
+1. creating three images with single channel and having three different pixel values on each.
+2. one image is created w/ single channel having pixel value of 0 through out the image w/ 384x384 resolution.
+3. other two images are created w/ single channel having pixel values of 100 and 255 respectively.
+
+// 

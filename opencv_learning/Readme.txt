@@ -35,4 +35,20 @@ Created and ran a first test application.
 2. one image is created w/ single channel having pixel value of 0 through out the image w/ 384x384 resolution.
 3. other two images are created w/ single channel having pixel values of 100 and 255 respectively.
 
-// 
+// 7_sample_program.cpp
+1. creating four imags with three channels for each image.
+2. initing the images w/ some data. for image1, just green channel is illuminated and the other two are set as 0, which is non-illumination.
+3. The fourth image is initialized w/ mix of values, so as to give some difference than blue, green or red.
+
+// 8_sample_program.cpp
+1. a simple program to count the number of channels in the image
+2. basically loading the image into the Mat object and using one of the member function to get the total channels.
+
+// 9_sample_program.cpp
+1. there is a function called split, which splits the channels and puts them into three different matrices.
+2. and these three different matrices can be viewed separately.
+
+// 10_sample_program.cpp
+1. using cvtColor() function to convert the image's color spaces
+2. here, an image is loaded to a Mat object and a convertion from RGB to gray scale is done.
+
